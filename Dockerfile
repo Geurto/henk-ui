@@ -1,6 +1,6 @@
 FROM node:latest as build-deps
 WORKDIR /usr/src/app
-COPY app/package.json app/yarn.lock ./
+COPY package.json yarn.lock ./
 RUN yarn
 COPY . ./
 RUN yarn run build
