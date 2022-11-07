@@ -14,5 +14,6 @@ SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 docker build \
 --build-arg BASE_IMAGE=balenalib/raspberrypi4-64-ubuntu:jammy \
 --platform linux/arm64/v8 \
+--no-cache \
 -t "henk-9000:ui-arm64" \
 .)
